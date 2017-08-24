@@ -1,0 +1,97 @@
+$border-radius:0;
+
+
+body	{
+	background:white;
+	font-family: 'Lato', sans-serif;
+}
+
+
+.panel{
+	border-radius:$border-radius;
+	border:none;
+}
+.btn{
+	border-radius: $border-radius;
+	-webkit-border-radius: $border-radius;
+	-moz-border-radius: $border-radius;
+	border:none;
+	text-transform: uppercase;
+	font-size:12px;
+}
+
+.jumbotron{
+	background:  url('/images/main-image.jpg') 50% 10% no-repeat;
+	background-size:cover;
+	height:60vh;
+	padding:0;
+	background-position:fixed;
+
+	.logo	{
+	max-width:350px;
+	}
+
+	h1{
+		font-weight:100;
+		font-size:36px;
+		margin-top:50px;
+	}
+
+	.jumbotron-overlay{
+		background-color:rgba(0,0,0,0.60);
+		disaply:block;
+		height:100%;
+		width:100%;
+		padding-top:50px;
+	}
+
+	h1, p, hr{
+	color:white;
+	}
+}
+
+
+
+section{
+	padding:100px 0;
+}
+
+section.top-features{
+	img{
+	box-shadow:0 15px 20px 5px rgba(0,0,0,0.25);
+	}
+}
+section.cta{
+background-color:#ccc;
+	.row{
+		>div{
+		text-align:center;
+		}
+	}	
+}
+
+section.features{
+background-color:#ccc;
+}
+
+section.screenshots{
+	text-align:center;
+}
+
+section.final-call{
+background-color:#ccc;
+}
+
+footer{
+	background-color:#354052;
+
+	a,p{
+		color:rgba(255,255,255,0.65);	
+	}
+
+	a:hover{
+		color:rgba(255,255,255,0.95);
+		text-decoration:none;	
+	}
+
+}
