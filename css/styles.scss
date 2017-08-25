@@ -1,15 +1,23 @@
 $border-radius:0;
+$section-bg-color:rgba(0,0,0,.05);
 
 
 body	{
 	background:white;
-	font-family: 'Lato', sans-serif;
+	font-family: 'Lato', sans-serif;;
+	
+	
 }
 
 
 .panel{
 	border-radius:$border-radius;
 	border:none;
+
+	h2{
+	padding-top:0;
+	margin-top:0;
+	}
 }
 .btn{
 	border-radius: $border-radius;
@@ -38,7 +46,7 @@ body	{
 	}
 
 	.jumbotron-overlay{
-		background-color:rgba(0,0,0,0.60);
+		background-color:rgba(#354052,.95);
 		disaply:block;
 		height:100%;
 		width:100%;
@@ -52,8 +60,34 @@ body	{
 
 
 
-section{
-	padding:100px 0;
+section{	
+
+	p,li,h1,h2,h3,h5,h6{
+		color:rgba(black,.5) !important;
+	}	
+	padding:70px 0;
+
+	h1{
+	font-size:36px;
+	font-weight:400;
+	margin-top:0;
+	}
+
+	h2{
+	font-size:28px;
+	}
+
+	h3{
+
+	}
+
+	h4{
+	color:#41AFFA;
+	}
+	p{
+		font-size: 14px;
+		line-height:1.7em;
+	}
 }
 
 section.top-features{
@@ -62,7 +96,7 @@ section.top-features{
 	}
 }
 section.cta{
-background-color:#ccc;
+background-color:$section-bg-color;
 	.row{
 		>div{
 		text-align:center;
@@ -70,8 +104,12 @@ background-color:#ccc;
 	}	
 }
 
+section.benefits .row:nth-child(2){
+	text-align:center;
+}
+
 section.features{
-background-color:#ccc;
+background-color:$section-bg-color;
 }
 
 section.screenshots{
@@ -79,7 +117,8 @@ section.screenshots{
 }
 
 section.final-call{
-background-color:#ccc;
+text-align:center;
+background-color:$section-bg-color;
 }
 
 footer{
