@@ -1,6 +1,7 @@
 $border-radius:0;
 $section-bg-color:rgba(0,0,0,.05);
-$overlay-color: #354052;
+$overlay-color: teal /*#3540528*/;
+$footer-bg-color: #354052;
 
 body	{
 	background:white;
@@ -13,8 +14,8 @@ body	{
 	border:none;
 
 	h2{
-	padding-top:0;
-	margin-top:0;
+		padding-top:0;
+		margin-top:0;
 	}
 }
 
@@ -31,15 +32,15 @@ body	{
 	background:$overlay-color;
 }
 .jumbotron{
-	background:  url('/images/main-image.jpg') 50% 10% no-repeat;
+	background:  url('/images/main-image.jpg') 50% 10% no-repeat fixed;
 	background-size:cover;
-	height:60vh;
+	height:425px;
 	padding:0;
 	background-position:fixed;
 	text-align: center;
 
 	.logo	{
-	max-width:350px;
+	max-width:250px;
 	margin:0 auto;
 	}
 
@@ -65,13 +66,15 @@ body	{
 
 
 section{	
+	padding:70px 0;
+
 	h4{
 	color:$overlay-color;
 	}
 	p,li,h1,h2,h3,h5,h6{
 		color:rgba(black,.5) !important;
 	}	
-	padding:70px 0;
+	
 
 	h1{
 	font-size:36px;
@@ -109,18 +112,31 @@ section.top-features{
 section.cta{
 
 	.row{
+
 		>div{
+
 		text-align:center;
+
+		
 		}
 	}	
+
+
+
 }
+
+
 
 section.benefits .row:nth-child(2){
 	text-align:center;
+
+	.fa{
+		color:$overlay-color !important;
+	}
 }
 
 section.features{
-
+	
 }
 
 section.screenshots{
@@ -130,11 +146,11 @@ display:none;
 
 section.final-call{
 text-align:center;
-
+display:none;
 }
 
 footer{
-	background-color:#354052;
+	background-color:$footer-bg-color;
 
 	a,p{
 		color:rgba(255,255,255,0.65);	
@@ -149,20 +165,25 @@ footer{
 
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 768px) { 
-	.jumbotron{height:45vh;}
+	.jumbotron{height:450px; text-align: center}
+	.logo{margin:0 auto !important;}
 }
 
 /* Medium devices (desktops, 992px and up) */
 @media (min-width: 992px)  { 
 .jumbotron{
 		text-align: left;
-		height:60vh;
+		height:600px;
 	}
+	.logo{margin-left:0 !important;}
 }
 
 /* Large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px ) { 
 .jumbotron{
 		text-align: left;
+		.logo{margin-left:0 !important;}
 	}
+
+	
 }

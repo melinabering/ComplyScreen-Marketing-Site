@@ -1,3 +1,4 @@
+/*#3540528*/
 body {
   background: white;
   font-family: 'Lato', sans-serif; }
@@ -18,24 +19,24 @@ body {
   font-size: 12px; }
 
 .btn-info {
-  background: #354052; }
+  background: teal; }
 
 .jumbotron {
-  background: url("/images/main-image.jpg") 50% 10% no-repeat;
+  background: url("/images/main-image.jpg") 50% 10% no-repeat fixed;
   background-size: cover;
-  height: 60vh;
+  height: 425px;
   padding: 0;
   background-position: fixed;
   text-align: center; }
   .jumbotron .logo {
-    max-width: 350px;
+    max-width: 250px;
     margin: 0 auto; }
   .jumbotron h1 {
     font-weight: 100;
     font-size: 36px;
     margin-top: 50px; }
   .jumbotron .jumbotron-overlay {
-    background-color: rgba(53, 64, 82, 0.85);
+    background-color: rgba(0, 128, 128, 0.85);
     disaply: block;
     height: 100%;
     width: 100%;
@@ -46,7 +47,7 @@ body {
 section {
   padding: 70px 0; }
   section h4 {
-    color: #354052; }
+    color: teal; }
   section p, section li, section h1, section h2, section h3, section h5, section h6 {
     color: rgba(0, 0, 0, 0.5) !important; }
   section h1 {
@@ -70,13 +71,16 @@ section.cta .row > div {
 
 section.benefits .row:nth-child(2) {
   text-align: center; }
+  section.benefits .row:nth-child(2) .fa {
+    color: teal !important; }
 
 section.screenshots {
   display: none;
   text-align: center; }
 
 section.final-call {
-  text-align: center; }
+  text-align: center;
+  display: none; }
 
 footer {
   background-color: #354052; }
@@ -89,15 +93,22 @@ footer {
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 768px) {
   .jumbotron {
-    height: 45vh; } }
+    height: 450px;
+    text-align: center; }
+  .logo {
+    margin: 0 auto !important; } }
 
 /* Medium devices (desktops, 992px and up) */
 @media (min-width: 992px) {
   .jumbotron {
     text-align: left;
-    height: 60vh; } }
+    height: 600px; }
+  .logo {
+    margin-left: 0 !important; } }
 
 /* Large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
   .jumbotron {
-    text-align: left; } }
+    text-align: left; }
+    .jumbotron .logo {
+      margin-left: 0 !important; } }
