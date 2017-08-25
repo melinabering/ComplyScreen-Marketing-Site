@@ -17,20 +17,25 @@ body {
   text-transform: uppercase;
   font-size: 12px; }
 
+.btn-info {
+  background: #354052; }
+
 .jumbotron {
   background: url("/images/main-image.jpg") 50% 10% no-repeat;
   background-size: cover;
   height: 60vh;
   padding: 0;
-  background-position: fixed; }
+  background-position: fixed;
+  text-align: center; }
   .jumbotron .logo {
-    max-width: 350px; }
+    max-width: 350px;
+    margin: 0 auto; }
   .jumbotron h1 {
     font-weight: 100;
     font-size: 36px;
     margin-top: 50px; }
   .jumbotron .jumbotron-overlay {
-    background-color: rgba(53, 64, 82, 0.95);
+    background-color: rgba(53, 64, 82, 0.85);
     disaply: block;
     height: 100%;
     width: 100%;
@@ -40,6 +45,8 @@ body {
 
 section {
   padding: 70px 0; }
+  section h4 {
+    color: #354052; }
   section p, section li, section h1, section h2, section h3, section h5, section h6 {
     color: rgba(0, 0, 0, 0.5) !important; }
   section h1 {
@@ -48,32 +55,28 @@ section {
     margin-top: 0; }
   section h2 {
     font-size: 28px; }
-  section h4 {
-    color: #41AFFA; }
   section p {
     font-size: 14px;
     line-height: 1.7em; }
 
+section:nth-child(odd) {
+  background-color: rgba(0, 0, 0, 0.05); }
+
 section.top-features img {
   box-shadow: 0 15px 20px 5px rgba(0, 0, 0, 0.25); }
 
-section.cta {
-  background-color: rgba(0, 0, 0, 0.05); }
-  section.cta .row > div {
-    text-align: center; }
+section.cta .row > div {
+  text-align: center; }
 
 section.benefits .row:nth-child(2) {
   text-align: center; }
 
-section.features {
-  background-color: rgba(0, 0, 0, 0.05); }
-
 section.screenshots {
+  display: none;
   text-align: center; }
 
 section.final-call {
-  text-align: center;
-  background-color: rgba(0, 0, 0, 0.05); }
+  text-align: center; }
 
 footer {
   background-color: #354052; }
@@ -82,3 +85,19 @@ footer {
   footer a:hover {
     color: rgba(255, 255, 255, 0.95);
     text-decoration: none; }
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  .jumbotron {
+    height: 45vh; } }
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .jumbotron {
+    text-align: left;
+    height: 60vh; } }
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  .jumbotron {
+    text-align: left; } }
