@@ -22,7 +22,7 @@ body {
   background: teal; }
 
 .jumbotron {
-  background: url("/images/main-image.jpg") 50% 10% no-repeat fixed;
+  background: url("../images/main-image.jpg") 50% 10% no-repeat fixed;
   background-size: cover;
   height: 425px;
   padding: 0;
@@ -37,7 +37,7 @@ body {
     margin-top: 50px; }
   .jumbotron .jumbotron-overlay {
     background-color: rgba(0, 128, 128, 0.85);
-    disaply: block;
+    display: block;
     height: 100%;
     width: 100%;
     padding-top: 50px; }

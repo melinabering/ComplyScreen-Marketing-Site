@@ -32,7 +32,7 @@ body	{
 	background:$overlay-color;
 }
 .jumbotron{
-	background:  url('/images/main-image.jpg') 50% 10% no-repeat fixed;
+	background:  url('../images/main-image.jpg') 50% 10% no-repeat fixed;
 	background-size:cover;
 	height:425px;
 	padding:0;
@@ -52,14 +52,14 @@ body	{
 
 	.jumbotron-overlay{
 		background-color:rgba($overlay-color,.85);
-		disaply:block;
+		display:block;
 		height:100%;
 		width:100%;
 		padding-top:50px;
 	}
 
 	h1, p, hr{
-	color:white;
+		color:white;
 	}
 }
 
