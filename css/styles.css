@@ -95,6 +95,8 @@ footer {
   .jumbotron {
     height: 450px;
     text-align: center; }
+    .jumbotron h1 {
+      margin-top: 100px !important; }
   .logo {
     margin: 0 auto !important; } }
 
@@ -103,6 +105,8 @@ footer {
   .jumbotron {
     text-align: left;
     height: 600px; }
+    .jumbotron h1 {
+      margin-top: 250px !important; }
   .logo {
     margin-left: 0 !important; } }
 
@@ -111,4 +115,6 @@ footer {
   .jumbotron {
     text-align: left; }
     .jumbotron .logo {
-      margin-left: 0 !important; } }
+      margin-left: 0 !important; }
+    .jumbotron h1 {
+      margin-top: 250px !important; } }
