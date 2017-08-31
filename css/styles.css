@@ -27,20 +27,28 @@ body {
   height: 425px;
   padding: 0;
   background-position: fixed;
-  text-align: center; }
+  text-align: center;
+  margin-bottom: 0; }
   .jumbotron .logo {
     max-width: 250px;
     margin: 0 auto; }
   .jumbotron h1 {
     font-weight: 100;
-    font-size: 36px;
-    margin-top: 50px; }
+    font-size: 36px; }
   .jumbotron .jumbotron-overlay {
     background-color: rgba(0, 128, 128, 0.85);
     display: block;
     height: 100%;
     width: 100%;
-    padding-top: 50px; }
+    padding-top: 50px;
+    position: relative; }
+    .jumbotron .jumbotron-overlay .center-align-content {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%); }
   .jumbotron h1, .jumbotron p, .jumbotron hr {
     color: white; }
 
@@ -95,26 +103,17 @@ footer {
   .jumbotron {
     height: 450px;
     text-align: center; }
-    .jumbotron h1 {
-      margin-top: 100px !important; }
   .logo {
     margin: 0 auto !important; } }
 
 /* Medium devices (desktops, 992px and up) */
 @media (min-width: 992px) {
   .jumbotron {
-    text-align: left;
     height: 600px; }
-    .jumbotron h1 {
-      margin-top: 250px !important; }
   .logo {
     margin-left: 0 !important; } }
 
 /* Large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
-  .jumbotron {
-    text-align: left; }
-    .jumbotron .logo {
-      margin-left: 0 !important; }
-    .jumbotron h1 {
-      margin-top: 250px !important; } }
+  .jumbotron .logo {
+    margin-left: 0 !important; } }
